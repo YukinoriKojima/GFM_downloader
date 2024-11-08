@@ -1,0 +1,6 @@
+data/*
+tmp/*
+fig/*
+inp/*
+src/visualize/*/*.png
+src/visualize/*.png
