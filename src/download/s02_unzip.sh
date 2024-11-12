@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # ZIPファイルが保存されている親ディレクトリ
-zip_dir="/home/ykojima/ykojima/GFM_data/data/download_exclusion_zip"  # ZIPファイルがあるディレクトリを指定
-out_home_dir="/home/ykojima/ykojima/GFM_data/data/download_exclusion"
+zip_dir="/home/ykojima/ykojima/GFM_data/data/download_flood_3_zip"  # ZIPファイルがあるディレクトリを指定
+out_home_dir="/home/ykojima/ykojima/GFM_data/data/download_flood_3_zip"
 
 # ZIPファイルを順番に処理
 for zip_file in "$zip_dir"/*.zip.zip; do

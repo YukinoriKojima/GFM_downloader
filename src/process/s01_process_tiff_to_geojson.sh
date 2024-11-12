@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# ! not using now!!!!
 YSTA=2022
 MSTA=08
 DSTA=15

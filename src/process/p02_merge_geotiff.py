@@ -8,14 +8,14 @@ from multiprocessing import Process
 
 # ** ====================
 # ** Parameters
-YSTA = 2022
-MSTA = 8
+YSTA = 2023
+MSTA = 2
 DSTA = 1
 YEND = 2023
-MEND = 3
+MEND = 5
 DEND = 1
-DATA_ROOT_DIR       = Path('/work/a06/ykojima/GFM_data/data/download_exclusion')
-OUTPUT_ROOT_DIR     = Path('/work/a06/ykojima/GFM_data/data/merged_by_day_exclusion')
+DATA_ROOT_DIR       = Path('/work/a06/ykojima/GFM_data/data/download_flood_3_zip')
+OUTPUT_ROOT_DIR     = Path('/work/a06/ykojima/GFM_data/data/merged_by_day_flood_3')
 #!! WARNING : this code REMOVES output directory and make it, 
 #!! thus please change output dir to avoid deleting data already processed.
 DATA_DIR_PREFIX     = 'pakistan_'

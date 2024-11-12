@@ -8,22 +8,22 @@ PASSWORD="your_password"
 
 # 2. Area of Your Interest & Layer You Want
 AOI_NAME="pakistan"
-LAYER_NUMBER="4"
+LAYER_NUMBER="2"
 
 # 3. Date(GMT)
-YSTA=2022
-MSTA=08
+YSTA=2023
+MSTA=02
 DSTA=01
 HSTA=00
 YEND=2023
-MEND=03
+MEND=05
 DEND=01
 HEND=00
 
 # 4. Output absolute directry
 # ! Please assign non-existing directry
 # ! the directory will be removed and recreated in the main pipeline
-download_dir="/home/ykojima/ykojima/GFM_data/data/download_exclusion_zip"
+download_dir="/home/ykojima/ykojima/GFM_data/data/download_flood_3_zip"
 
 # **
 
@@ -31,13 +31,15 @@ download_dir="/home/ykojima/ykojima/GFM_data/data/download_exclusion_zip"
 mkdir -p $download_dir
 # Authenticatio
 
-AUTH_INFO=$(curl -s -X 'POST' \
-  'https://api.gfm.eodc.eu/v2/auth/login' \
+AUTH_INFO=$(curl -X 'POST' \
+  'https://api.gfm.eodc.eu/v1/auth/login' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
-  -d "{
-  "email": "${EMAIL}", #!
-  "password": "${PASSWORD}"}" ) #!
+  -d '{
+  "email": "kojima-yukinori6911@g.ecc.u-tokyo.ac.jp",
+  "password": "kjm6S911#kjm6S911#"
+}' ) #!
+echo $AUTH_INFO
 
 # アクセストークンを抽出
 ACCESS_TOKEN=$(echo "$AUTH_INFO" | grep -o '"access_token": *"[^"]*"' | sed 's/"access_token": "//' | sed 's/"//')
