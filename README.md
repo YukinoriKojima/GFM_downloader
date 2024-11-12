@@ -4,10 +4,10 @@
 
 # To Download
 1. Change parameters in s01_downloaad_products.sh
-2. execute it
+2. execute it (only in storm??)
 3. Change parameters in s02_unzip.sh
-4. execute it
+4. execute it (in node server)
 
 # To Create Raster File by days
 1. Change parameters in p02_merge_geotiff.py
-2. execute it
+2. execute it (in node server)
